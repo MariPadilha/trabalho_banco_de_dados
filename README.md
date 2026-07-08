@@ -170,10 +170,9 @@ ChatGPT (OpenAI)
 
 Etapas utilizadas:
 
-- revisão do modelo conceitual;
-- auxílio na geração do esquema SQL;
-- criação de consultas;
-- geração de testes;
-- apoio na documentação.
+- Revisão textual;
+- sugestões de modelagem;
+- revisão de consultas SQL;
+- auxílio na documentação.
 
 Todo conteúdo gerado foi revisado e validado pelos integrantes do grupo.
