@@ -62,7 +62,7 @@ sql/
 diagramas/
 │
 ├── modelo_conceitual.pdf
-└── modelo_relacional.jpg
+└── modelo_relacional.pdf
 ```
 
 ---
