@@ -1,0 +1,24 @@
+services:
+  db:
+    image: postgres:16
+
+    container_name: rastreabilidade_db
+
+    restart: always
+
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin123
+      POSTGRES_DB: rastreabilidade_agricola
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./sql/01_schema.sql:/docker-entrypoint-initdb.d/01_schema.sql
+      - ./sql/02_dados.sql:/docker-entrypoint-initdb.d/02_dados.sql
+      - ./sql/03_consultas.sql:/docker-entrypoint-initdb.d/03_consultas.sql
+      - ./sql/04_validacao.sql:/scripts/04_validacao.sql
+volumes:
+  postgres_data:
